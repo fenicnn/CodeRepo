@@ -75,6 +75,14 @@ DELETE /trial_assistant_student_list/doc/_query
         "match_all": {}
     }
 }
+POST trial_student/_delete_by_query
+{
+  "query": { 
+    "match_all": {
+    }
+  }
+}
+
 ```
 
 # 数据查询
